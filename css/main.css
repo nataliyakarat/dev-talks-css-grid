@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto 1fr;
+}
+
+.menu {
+  background-color: #444d58;
+  color: white;
+  padding: 20px;
+}
+
+.header {
+   padding: 20px;
+}
+
+.main {
+  background-color: #c5d4e6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "info addresses emails"
+    "info props props"
+    "additional transactions transactions";
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.player-info {
+  grid-area: info;
+  background: white;
+  height: 500px;
+}
+
+.player-additional {
+  grid-area: additional;
+  background: white;
+}
+
+.last-addresses {
+  grid-area: addresses;
+  background: white;
+}
+
+.last-emails {
+  grid-area: emails;
+  background: white;
+}
+
+.player-props {
+  grid-area: props;
+  background: white;
+}
+
+.last-transactions {
+  grid-area: transactions;
+  background: white;
+}
